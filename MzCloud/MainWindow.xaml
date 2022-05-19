@@ -1,0 +1,31 @@
+﻿<Window x:Class="MzCloud.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MzCloud"
+        mc:Ignorable="d"
+        MinHeight="500" MinWidth="600"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="200" MaxWidth="350"/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Border Background="#1B1A17" Grid.Row="0" Grid.Column="0"/>
+        <Grid Background="#413F42" Grid.Row="1" Grid.ColumnSpan="3">
+            
+        </Grid>
+        <Border Background="#7F8487" Grid.Row="1" Grid.ColumnSpan="3" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="1"/>
+        <GridSplitter Background="#7F8487" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="1" ShowsPreview="False"/>
+        <Border Background="#413F42" Grid.Row="0" Grid.Column="2"/>
+
+        
+        
+    </Grid>
+</Window>
